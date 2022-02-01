@@ -28,8 +28,9 @@ sick_multiline_update = lambda x:print("".join([f"\x1B[{len(x)}A",*["%s%s"%(f"{l
 # ...there's no particular advantage to using this, just did it for fun.
 
 
+# Usage
 print("Function mode...")
-print("\n\n\n")  # Print 3 endlines because there will be 4 lines.
+print("\n"*3)  # Print 3 endlines because there will be 4 lines.
 multiline_update(["hey 1", "hey 2", "hey 3", "hey 4"])
 time.sleep(1)
 multiline_update(["what's 1", "what's 2", "what's 3", "what's 4"])
@@ -38,7 +39,7 @@ multiline_update(["up 1", "up 2", "up 3", "up 4"])
 time.sleep(1)
 
 print("Lambda mode...")
-print("\n\n\n")  # Print 3 endlines because there will be 4 lines.
+print("\n"*3)  # Print 3 endlines because there will be 4 lines.
 sick_multiline_update(["hey 1", "hey 2", "hey 3", "hey 4"])
 time.sleep(1)
 sick_multiline_update(["what's 1", "what's 2", "what's 3", "what's 4"])
