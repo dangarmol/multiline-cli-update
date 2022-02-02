@@ -8,7 +8,6 @@ def multiline_update(lines: list) -> None:
     Updates the last printed lines with the contents provided as a list of strings.
     You may wanna use `print("\\n"*(len(lines)-1))` before calling this function,
     for the first time, since it will overwrite whatever was in the console otherwise.
-    PS: This probably doesn't work on Windows.
 
     Args:
        - `lines: list[str]` - List of lines to print. The lines cannot contain any `\\n` characters.
